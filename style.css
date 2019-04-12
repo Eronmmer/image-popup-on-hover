@@ -1,0 +1,35 @@
+ul {
+  display: flex;
+  margin-top: 15rem;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  padding: 20px;
+  position: relative;
+}
+
+.small {
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.large img {
+  height: 200px;
+  width: auto;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 3px rgba(127, 127, 127, 0.15);
+}
+
+.large {
+  position: absolute;
+  left: -9999px;
+  z-index: 1;
+}
+
+li:hover .large {
+  left: 20px;
+  top: -140px;
+}
